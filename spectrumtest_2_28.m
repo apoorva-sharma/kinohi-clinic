@@ -1,4 +1,4 @@
-img = imread('img/28feb_632.png');
+img = imread('img/28feb_sodium2.png');
 img = im2double(img);
 
 figure(1)
@@ -24,5 +24,5 @@ nm = 632+0.4*pixel;
 
 plot(nm,spectrum)
 xlabel('wavelength (nm)')
-ylabel('log(intensity)')
+ylabel('Intensity')
 title('Spectrum')
