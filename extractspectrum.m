@@ -16,7 +16,7 @@ lambda = lambda_d + slope*pixel;
 
 plot(lambda,spectrum)
 xlabel('wavelength (nm)')
-ylabel('log(intensity)')
+ylabel('intensity')
 title('Spectrum')
 
 end

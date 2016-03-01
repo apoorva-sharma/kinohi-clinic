@@ -10,6 +10,12 @@ figure(1)
 
 
 
+fringe = imread('img/25feb_hydrogen3.png');
+
+figure(2)
+[lambda,spectrum] = extractspectrum(fringe,row,slope,lambda_d);
+
+
 
 % 2/28 calibration
 lambda_d = 632;
@@ -18,5 +24,5 @@ row = 465;
 
 fringe = imread('img/2-25 SHS Testing/25feb_sodiumvapor.png');
 
-figure(2)
+figure(3)
 [lambda,spectrum] = extractspectrum(fringe,row,slope,lambda_d);
