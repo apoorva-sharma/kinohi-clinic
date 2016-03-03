@@ -10,7 +10,7 @@ figure(1)
 
 
 
-fringe = imread('img/25feb_hydrogen3.png');
+fringe = imread('img/28feb_632.png');
 
 figure(2)
 [lambda,spectrum] = extractspectrum(fringe,row,slope,lambda_d);
@@ -26,3 +26,4 @@ fringe = imread('img/2-25 SHS Testing/25feb_sodiumvapor.png');
 
 figure(3)
 [lambda,spectrum] = extractspectrum(fringe,row,slope,lambda_d);
+
