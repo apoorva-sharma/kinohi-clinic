@@ -6,12 +6,20 @@ function [ lambda, spectrum ] = extractspectrum(fringe, row, slope,lambda_d )
 %   lambda_d = design frequency, frequency where the fringes are completely
 %   horizontal
 
+% ensure image is grayscale
+if size(fringe,3) == 3
+    fringe = rgb2gray(fringe);
+end
+
+width = size(fringe,2);
+height = size(fringe,1);
+
 F = fft2(fringe);
-Fscaled = abs(fftshift(F));
+Fscaled = log(1+abs(fftshift(F)));
 
 spectrum = Fscaled(row,:);
 
-pixel = (0:1279) - 640;
+pixel = (0:(width-1)) - width/2;
 lambda = lambda_d + slope*pixel;
 
 plot(lambda,spectrum)
