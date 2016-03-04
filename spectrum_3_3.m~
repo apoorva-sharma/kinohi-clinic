@@ -1,0 +1,12 @@
+% 2/28 calibration
+lambda_d = 632;
+slope = 26/156;
+row = 1001;
+
+fringe = imread('img/3-3/HeNeThroughNotch3.png');
+
+figure(1)
+[lambda,spectrum] = extractspectrum(fringe,row,slope,lambda_d);
+
+
+
