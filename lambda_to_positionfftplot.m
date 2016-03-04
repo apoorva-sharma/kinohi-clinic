@@ -50,7 +50,7 @@ f2 = fit(lambda.',centroids_x2_all.','poly1');
 
 % This allows you to see the black and white image with the centroids
 % superimposed
-% imshow(F_bw)
-% hold on
-% plot(centroids(:,1),centroids(:,2), 'b*')
-% hold off
+imshow(F_bw)
+hold on
+plot(centroids(:,1),centroids(:,2), 'b*')
+hold off
