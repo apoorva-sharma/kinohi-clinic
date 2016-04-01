@@ -1,0 +1,6 @@
+nopaper 49.85uW
+thispaper 4.7uW
+thispaper+thatpaper 900pW
+bothfolded 220pW (thispaper+thatpaper*2)
+bothfolded+envelopes 30pW
+bothfolded+thorlabs undetectable

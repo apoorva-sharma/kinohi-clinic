@@ -17,7 +17,7 @@ height = size(fringe,1);
 F = fft2(fringe);
 Fscaled = log(1+abs(fftshift(F)));
 
-spectrum = Fscaled(row,:);
+spectrum = Fscaled(row,:)+Fscaled(row-1,:)+Fscaled(row+1,:);
 
 pixel = (0:(width-1)) - width/2;
 lambda = lambda_d + slope*pixel;
