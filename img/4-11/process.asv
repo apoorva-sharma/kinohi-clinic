@@ -1,0 +1,6 @@
+filenames = dir('Calibration\*.png');
+nimg = length(filenames);
+
+for imgname=filenames.name
+    img = imread(imgname);
+    ffts = fft(img,
